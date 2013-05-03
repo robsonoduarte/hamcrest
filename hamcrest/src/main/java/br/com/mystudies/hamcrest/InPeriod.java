@@ -36,8 +36,8 @@ public class InPeriod extends TypeSafeMatcher<Date> {
 
 
 	@Factory
-	public static Matcher<Date> inPeriod(Date maxDate, Date minDate) {
-		return new InPeriod(minDate, minDate);
+	public static Matcher<Date> inPeriod(Date minDate, Date maxDate) {
+		return new InPeriod(minDate, maxDate);
 	}
 
 
